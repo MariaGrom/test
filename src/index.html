@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Тестовое задание для ВТОП3">
+	<meta name="keywords" content="html, css, javascript">
+	<meta name="author" content="Мария Громыко">
+	<link rel="stylesheet" href="./pages/index.css">
+
+	<title>ВТОП3</title>
+</head>
+
+<body class="page">
+	<header></header>
+	<main class="main">
+		<section class="register">
+			<div class="register__sidebar">
+				<h1 class="register__title">Sign up</h1>
+			</div>
+			<div class="register__main">
+				<div class="register__greeting">
+					<h2 class="register__greeting-title">New user?</h2>
+					<p class="register__greeting-text">Use the form below to create your account.</p>
+				</div>
+				<form class="form">
+					<fieldset class="form__fieldset">
+						<label class="form__label" name="name">
+							<p class="form__input-title">First name</p>
+							<input class="form__input" id="name__input" name="name" type="text" placeholder="Alice" required></input>
+							<span class="form__error"></span>
+						</label>
+						<label class="form__label" name="last-name">
+							<p class="form__input-title">Last name</p>
+							<input class="form__input" id="last-name__input" name="last-name" type="text" placeholder="Miller"
+								required></input>
+							<span class="form__error"></span>
+						</label>
+						<label class="form__label" name="nationality">
+							<p class="form__input-title">Nationality</p>
+							<input class="form__input" id="nationality__input" name="nationality" type="text" placeholder="American"
+								required></input>
+							<span class="form__error"></span>
+						</label>
+						<label class="form__label" name="email">
+							<p class="form__input-title">E-mail</p>
+							<input class="form__input" id="email__input" name="email" type="email"
+								placeholder="alice.miller@yahoo.com" required></input>
+							<span class="form__error"></span>
+						</label>
+						<label class="form__label" name="birth">
+							<p class="form__input-title">Date of Birth</p>
+							<input class="form__input" id="birth__input" name="birth" type="text" placeholder="American"
+								required></input>
+							<span class="form__error"></span>
+						</label>
+						<label class="form__label" name="gender">
+							<p class="form__input-title">Gender</p>
+							<input class="form__input" id="gender__input" name="gender" type="text" placeholder="American"
+								required></input>
+							<span class="form__error"></span>
+						</label>
+						<label class="form__label" name="password">
+							<p class="form__input-title">Password</p>
+							<input class="form__input" id="password__input" name="password" type="password"
+								required></input>
+							<span class="form__error"></span>
+						</label>
+						<label class="form__label" name="confirm-password">
+							<p class="form__input-title">Confirm Password</p>
+							<input class="form__input" id="confirm-password__input" name="password" type="password"
+							 required></input>
+							<span class="form__error"></span>
+						</label>
+					</fieldset>
+					<div class="form__sumbit">
+					<p>Have an account? <a>Login</a></p>
+					<button type="submit">Complete Signup</button>
+					</div>
+				</form>
+			</div>
+
+		</section>
+
+	</main>
+	<footer></footer>
+	<script src="./pages/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,6 @@
+.form__sumbit {
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	padding: 82px 0 0 0;
+}

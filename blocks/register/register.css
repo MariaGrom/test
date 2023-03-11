@@ -1,0 +1,10 @@
+.register {
+	max-width: 665px;
+	max-height: 481px;
+	margin: 0 auto;
+	padding: 0;
+	background-color: #fff;
+	display: flex;
+	border-bottom: #f2f2f2 0.5px solid;
+	border-top: #f2f2f2 0.5px solid;
+}

@@ -1,0 +1,10 @@
+.register__sidebar{
+	display: flex;
+	max-width: 137.2px;
+	width: 20%;
+	background-color: #5A61ED;
+	margin: 0;
+	padding: 0;
+	border: 1px solid red;
+}
+
