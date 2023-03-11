@@ -1,5 +1,11 @@
 .form__label {
 	margin: 0;
-	padding: 0;
-	width: 235px;
+	padding: 0 15px 16px 0;
+	width: 221px;
+	/* width: 40%; */
+	/* border: red 1px solid; */
+}
+
+.form__label:nth-of-type(2n){
+	padding-right: 0;
 }

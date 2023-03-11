@@ -1,0 +1,7 @@
+.form__gender{
+	display: flex;
+flex-direction: column;
+width: 221px;
+margin: 0;
+padding: 0;
+}

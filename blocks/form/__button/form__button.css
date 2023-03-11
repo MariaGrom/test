@@ -1,0 +1,13 @@
+.form__button{
+	background-color:#5A61ED;
+	color:#fff;
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 18.13px;
+	font-family: "PTSans";
+	width: 154px;
+	height: 32px;
+}

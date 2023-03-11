@@ -46,7 +46,9 @@
 						<label class="form__label" name="email">
 							<p class="form__input-title">E-mail</p>
 							<input class="form__input" id="email__input" name="email" type="email"
-								placeholder="alice.miller@yahoo.com" required></input>
+								placeholder="alice.miller@yahoo.com" required>
+							<!-- <img src="./image/ok.svg" class="form__image-ok"/> -->
+							</input>
 							<span class="form__error"></span>
 						</label>
 						<label class="form__label" name="birth">
@@ -55,28 +57,29 @@
 								required></input>
 							<span class="form__error"></span>
 						</label>
-						<label class="form__label" name="gender">
+						<div class="form__gender">
 							<p class="form__input-title">Gender</p>
-							<input class="form__input" id="gender__input" name="gender" type="text" placeholder="American"
-								required></input>
-							<span class="form__error"></span>
-						</label>
+							<div class="form__gender-choice">
+								<input class="form__gender-input" id="gender__input" name="gender" type="radio" required></input>
+								<label for="male" class="form__gender-label" name="gender">Male</label>
+								<input class="form__gender-input" id="gender__input" name="gender" type="radio" required></input>
+								<label for="female" class="form__gender-label form__label" name="gender">Female</label>
+							</div>
+						</div>
 						<label class="form__label" name="password">
 							<p class="form__input-title">Password</p>
-							<input class="form__input" id="password__input" name="password" type="password"
-								required></input>
+							<input class="form__input" id="password__input" name="password" type="password" required></input>
 							<span class="form__error"></span>
 						</label>
 						<label class="form__label" name="confirm-password">
 							<p class="form__input-title">Confirm Password</p>
-							<input class="form__input" id="confirm-password__input" name="password" type="password"
-							 required></input>
+							<input class="form__input" id="confirm-password__input" name="password" type="password" required></input>
 							<span class="form__error"></span>
 						</label>
 					</fieldset>
 					<div class="form__sumbit">
-					<p>Have an account? <a>Login</a></p>
-					<button type="submit">Complete Signup</button>
+						<p>Have an account? <a href="#" target="_blank" class="form__link">Login</a></p>
+						<button class="form__button" type="submit">Complete Signup</button>
 					</div>
 				</form>
 			</div>

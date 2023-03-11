@@ -1,4 +1,6 @@
-.form{
+.form {
 	display: flex;
-    flex-wrap: wrap;
+	flex-wrap: wrap;
+	align-content: space-between;
 }
+

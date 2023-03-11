@@ -14,3 +14,9 @@
 @import url('../../blocks/form/__input/form__input.css');
 @import url('../../blocks/form/__label/form__label.css');
 @import url('../../blocks/form/__submit/form__submit.css');
+@import url('../../blocks/form/__button/form__button.css');
+@import url('../../blocks/form/__gender/form__gender.css');
+@import url('../../blocks/form/__gender-choice/form__gender-choice.css');
+@import url('../../blocks/form/__gender-label/form__gender-label.css');
+@import url('../../blocks/form/__gender-input/form__gender-input.css');
+@import url('../../blocks/form/__link/form__link.css');
