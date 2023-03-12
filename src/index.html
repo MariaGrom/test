@@ -20,18 +20,18 @@
 				<h1 class="register__title">Sign up</h1>
 			</div>
 			<div class="register__main">
-				<div class="register__greeting">
-					<h2 class="register__greeting-title">New user?</h2>
-					<p class="register__greeting-text">Use the form below to create your account.</p>
-				</div>
 				<form class="form">
-					<fieldset class="form__fieldset">
+					<div class="register__greeting">
+						<h2 class="register__greeting-title">New user?</h2>
+						<p class="register__greeting-text">Use the form below to create your account.</p>
+					</div>
+					<section class="form__fieldset">
 						<label class="form__label" name="name">
 							<p class="form__input-title">First name</p>
 							<input class="form__input" id="name__input" name="name" type="text" placeholder="Alice" required></input>
 							<span class="form__error"></span>
 						</label>
-						<label class="form__label" name="last-name">
+						<label class="form__label " name="last-name">
 							<p class="form__input-title">Last name</p>
 							<input class="form__input" id="last-name__input" name="last-name" type="text" placeholder="Miller"
 								required></input>
@@ -45,9 +45,9 @@
 						</label>
 						<label class="form__label" name="email">
 							<p class="form__input-title">E-mail</p>
-							<input class="form__input form__input_type_email" id="email__input" name="email" type="email"
+							<input class="form__input " id="email__input" name="email" type="email"
 								placeholder="alice.miller@yahoo.com" required>
-							<img src="./image/ok.svg" class="form__image-ok"/>
+							<!-- <img src="./image/ok.svg" class="form__image-ok" /> -->
 							</input>
 							<span class="form__error"></span>
 						</label>
@@ -61,15 +61,17 @@
 							<p class="form__input-title">Gender</p>
 							<div class="form__gender-choice">
 								<label>
-								<input class="form__gender-input invisible-checkbox" id="gender__input" name="gender" type="radio"></input>
-								<span class="visible-checkbox"></span>
-								<span for="male" class="form__gender-label" name="gender">Male</span>
-							</label>
-							<label>
-								<input class="form__gender-input invisible-checkbox" id="gender__input" name="gender" type="radio"></input>
-								<span class="visible-checkbox"></span>
-								<span for="female" class="form__gender-label " name="gender">Female</span>
-							</label>
+									<input class="form__gender-input invisible-checkbox" id="gender__input" name="gender"
+										type="radio"></input>
+									<span class="visible-checkbox"></span>
+									<span for="male" class="form__gender-label" name="gender">Male</span>
+								</label>
+								<label>
+									<input class="form__gender-input invisible-checkbox" id="gender__input" name="gender"
+										type="radio"></input>
+									<span class="visible-checkbox"></span>
+									<span for="female" class="form__gender-label " name="gender">Female</span>
+								</label>
 							</div>
 						</div>
 						<label class="form__label" name="password">
@@ -82,7 +84,7 @@
 							<input class="form__input" id="confirm-password__input" name="password" type="password" required></input>
 							<span class="form__error"></span>
 						</label>
-					</fieldset>
+					</section>
 					<div class="form__sumbit">
 						<p class="form__text">Have an account? <a href="#" target="_blank" class="form__link">Login</a></p>
 						<button class="form__button" type="submit">Complete Signup</button>
