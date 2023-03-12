@@ -15,7 +15,7 @@
 <body class="page">
 	<header></header>
 	<main class="main">
-		<section class="register">
+		<div class="register">
 			<div class="register__sidebar">
 				<h1 class="register__title">Sign up</h1>
 			</div>
@@ -45,9 +45,9 @@
 						</label>
 						<label class="form__label" name="email">
 							<p class="form__input-title">E-mail</p>
-							<input class="form__input" id="email__input" name="email" type="email"
+							<input class="form__input form__input_type_email" id="email__input" name="email" type="email"
 								placeholder="alice.miller@yahoo.com" required>
-							<!-- <img src="./image/ok.svg" class="form__image-ok"/> -->
+							<img src="./image/ok.svg" class="form__image-ok"/>
 							</input>
 							<span class="form__error"></span>
 						</label>
@@ -57,13 +57,19 @@
 								required></input>
 							<span class="form__error"></span>
 						</label>
-						<div class="form__gender">
+						<div class="form__gender form__label">
 							<p class="form__input-title">Gender</p>
 							<div class="form__gender-choice">
-								<input class="form__gender-input" id="gender__input" name="gender" type="radio" required></input>
-								<label for="male" class="form__gender-label" name="gender">Male</label>
-								<input class="form__gender-input" id="gender__input" name="gender" type="radio" required></input>
-								<label for="female" class="form__gender-label form__label" name="gender">Female</label>
+								<label>
+								<input class="form__gender-input invisible-checkbox" id="gender__input" name="gender" type="radio"></input>
+								<span class="visible-checkbox"></span>
+								<span for="male" class="form__gender-label" name="gender">Male</span>
+							</label>
+							<label>
+								<input class="form__gender-input invisible-checkbox" id="gender__input" name="gender" type="radio"></input>
+								<span class="visible-checkbox"></span>
+								<span for="female" class="form__gender-label " name="gender">Female</span>
+							</label>
 							</div>
 						</div>
 						<label class="form__label" name="password">
@@ -78,13 +84,13 @@
 						</label>
 					</fieldset>
 					<div class="form__sumbit">
-						<p>Have an account? <a href="#" target="_blank" class="form__link">Login</a></p>
+						<p class="form__text">Have an account? <a href="#" target="_blank" class="form__link">Login</a></p>
 						<button class="form__button" type="submit">Complete Signup</button>
 					</div>
 				</form>
 			</div>
 
-		</section>
+		</div>
 
 	</main>
 	<footer></footer>

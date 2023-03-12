@@ -1,3 +1,5 @@
-/* .form__image-ok{
-
-} */
+.form__image-ok {
+	position: relative;
+	right: -206px;
+	top: 50%;
+}

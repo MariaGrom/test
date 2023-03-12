@@ -1,6 +1,31 @@
-.form__gender-input{
+.form__gender-input {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+}
+
+	/* отрисовываем ближащий спан к радиокнопке и прописываем его свойства под стиль страниц */
+.form__gender-input + span {
+	display: inline-block;
+	vertical-align: middle;
 	width: 12px;
 	height: 12px;
+	border: 1px solid #5a61ed;
+	border-radius: 50%;
+	cursor: pointer;
 	margin: 0;
-	padding: 5.3px 0 6px 0;
+	padding: 0;
+}
+
+.form__gender-input:checked + .visible-checkbox {
+	background-image: url("../../../src/image/Rectangle\ 2\ Copy.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 50%;
+}
+
+.form__gender-input:disabled+ .visible-checkbox {
+	border: 1px solid #5a61ed;	
 }

@@ -7,3 +7,6 @@
 	border-bottom: #F2F2F2 solid 0.7px;
 }
 
+.form__input:focus{
+	outline: 1px solid #5a61ed;
+}

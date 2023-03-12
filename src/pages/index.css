@@ -20,3 +20,7 @@
 @import url('../../blocks/form/__gender-label/form__gender-label.css');
 @import url('../../blocks/form/__gender-input/form__gender-input.css');
 @import url('../../blocks/form/__link/form__link.css');
+@import url('../../blocks/form/__text/form__text.css');
+@import url('../../blocks/register/__greeting/register__greeting.css');
+@import url('../../blocks/form/__input/_type/form__input_type_email.css');
+@import url('../../blocks/form/__image-ok/form__image-ok.css');
