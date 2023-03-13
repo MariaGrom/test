@@ -1,0 +1,5 @@
+.form__select-birth {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}

@@ -1,0 +1,20 @@
+.form__select {
+position: relative;
+}
+
+
+.form__select-button {
+	background-image: url("../../../src/image/select.svg");
+	background-repeat: no-repeat;
+	background-position: right;
+	border: none;
+	width: 8px;
+	height: 4px;
+	position: relative;
+	top: -25px;
+	right: -219px;
+	background-color: #fff;
+	cursor: pointer;
+	padding: 0;
+	margin: 0;
+}

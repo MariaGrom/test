@@ -1,0 +1,37 @@
+.form__input-birth{
+    border: none;
+		border-bottom: #F2F2F2 solid 0.7px;
+    margin: 0;
+    padding: 0;
+		background: transparent;
+		/* background-image: url('../../../src/image/select.svg'); */
+		background-repeat: no-repeat;
+		background-position: right;
+}
+
+.form__input_type_date{
+	width: 56px;
+}
+
+.form__select-button_type_date{
+	top: 0;
+	right: 10px;
+}
+
+.form__input_type_month{
+	width: 91px;
+}
+
+.form__select-button_type_month{
+	top: 0;
+	right: 10px;
+}
+
+.form__input_type_year{
+	width: 67.67px;
+}
+
+.form__select-button_type_year{
+	top: 0;
+	right: 10px;
+}

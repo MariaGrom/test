@@ -1,0 +1,9 @@
+.register__image{
+	background-image: url('../../../src/image/Shape_min.svg');
+	width: 307px;
+	height: 355px;
+	position: absolute;
+	z-index: -1;
+	right: 0;
+	bottom: 0;
+}

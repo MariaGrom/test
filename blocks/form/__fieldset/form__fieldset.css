@@ -6,20 +6,5 @@
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
-	max-width: 485px;
 	border: 1px solid red;
 }
-
-
-/* .form__fieldset {
-	display: grid;
-	max-width: 485px;
-	min-height: 216px;
-	border: none;
-	margin: 0;
-	padding: 20px 0 0 0;
-	grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
-  grid-template-rows: repeat(auto-fit, minmax(42px, 1fr));
-	gap: 16px 15px;
-	border: 1px solid red;
-} */

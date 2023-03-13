@@ -1,7 +1,7 @@
-.form__gender{
+.form__gender {
 	display: flex;
-flex-direction: column;
-width: 221px;
-margin: 0;
-padding: 0;
+	flex-direction: column;
+	width: 235px;
+	margin: 0;
+	padding: 0 0 16px 0;
 }

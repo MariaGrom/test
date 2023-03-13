@@ -5,6 +5,11 @@
 	padding: 0 0 0 0.4px;
 	border: none;
 	border-bottom: #F2F2F2 solid 0.7px;
+	background: transparent;
+	font-size: 14px;
+	line-height: 16.41px;
+	color: #111;
+	font-weight: 500;
 }
 
 .form__input:focus{

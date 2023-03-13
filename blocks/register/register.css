@@ -7,4 +7,6 @@
 	display: flex;
 	border-bottom: #f2f2f2 0.5px solid;
 	border-top: #f2f2f2 0.5px solid;
+	position: relative;
+	z-index: 2;
 }

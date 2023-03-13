@@ -21,77 +21,90 @@
 			</div>
 			<div class="register__main">
 				<form class="form">
-					<div class="register__greeting">
-						<h2 class="register__greeting-title">New user?</h2>
-						<p class="register__greeting-text">Use the form below to create your account.</p>
-					</div>
-					<section class="form__fieldset">
-						<label class="form__label" name="name">
-							<p class="form__input-title">First name</p>
-							<input class="form__input" id="name__input" name="name" type="text" placeholder="Alice" required></input>
-							<span class="form__error"></span>
-						</label>
-						<label class="form__label " name="last-name">
-							<p class="form__input-title">Last name</p>
-							<input class="form__input" id="last-name__input" name="last-name" type="text" placeholder="Miller"
-								required></input>
-							<span class="form__error"></span>
-						</label>
-						<label class="form__label" name="nationality">
-							<p class="form__input-title">Nationality</p>
-							<input class="form__input" id="nationality__input" name="nationality" type="text" placeholder="American"
-								required></input>
-							<span class="form__error"></span>
-						</label>
-						<label class="form__label" name="email">
-							<p class="form__input-title">E-mail</p>
-							<input class="form__input " id="email__input" name="email" type="email"
-								placeholder="alice.miller@yahoo.com" required>
-							<!-- <img src="./image/ok.svg" class="form__image-ok" /> -->
-							</input>
-							<span class="form__error"></span>
-						</label>
-						<label class="form__label" name="birth">
-							<p class="form__input-title">Date of Birth</p>
-							<input class="form__input" id="birth__input" name="birth" type="text" placeholder="American"
-								required></input>
-							<span class="form__error"></span>
-						</label>
-						<div class="form__gender form__label">
-							<p class="form__input-title">Gender</p>
-							<div class="form__gender-choice">
-								<label>
-									<input class="form__gender-input invisible-checkbox" id="gender__input" name="gender"
-										type="radio"></input>
-									<span class="visible-checkbox"></span>
-									<span for="male" class="form__gender-label" name="gender">Male</span>
-								</label>
-								<label>
-									<input class="form__gender-input invisible-checkbox" id="gender__input" name="gender"
-										type="radio"></input>
-									<span class="visible-checkbox"></span>
-									<span for="female" class="form__gender-label " name="gender">Female</span>
-								</label>
-							</div>
+					<div>
+						<div class="register__greeting">
+							<h2 class="register__greeting-title">New user?</h2>
+							<p class="register__greeting-text">Use the form below to create your account.</p>
 						</div>
-						<label class="form__label" name="password">
-							<p class="form__input-title">Password</p>
-							<input class="form__input" id="password__input" name="password" type="password" required></input>
-							<span class="form__error"></span>
-						</label>
-						<label class="form__label" name="confirm-password">
-							<p class="form__input-title">Confirm Password</p>
-							<input class="form__input" id="confirm-password__input" name="password" type="password" required></input>
-							<span class="form__error"></span>
-						</label>
-					</section>
+						<section class="form__fieldset">
+							<label class="form__label" name="name">
+								<p class="form__input-title">First name</p>
+								<input class="form__input" id="name__input" name="name" type="text" required></input>
+								<span class="form__error"></span>
+							</label>
+							<label class="form__label " name="last-name">
+								<p class="form__input-title">Last name</p>
+								<input class="form__input" id="last-name__input" name="last-name" type="text" required></input>
+								<span class="form__error"></span>
+							</label>
+							<label class="form__label " name="nationality">
+								<p class="form__input-title ">Nationality</p>
+								<input class="form__input form__select" id="nationality__input" name="nationality" type="text" required>
+								<button class="form__select-button"></button>
+								</input>
+								<span class="form__error"></span>
+							</label>
+							<label class="form__label" name="email">
+								<p class="form__input-title">E-mail</p>
+								<input class="form__input form__input_type_email" id="email__input" name="email" type="email" required>
+								</input>
+								<span class="form__error"></span>
+							</label>
+							<label class="form__label" name="birth">
+								<p class="form__input-title">Date of Birth</p>
+								<div class="form__select-birth">
+									<input class="form__select form__input-birth form__input_type_date" id="birth__input" name="birth"
+										type="text" required>
+									<button class="form__select-button form__select-button_type_date"></button>
+									</input>
+									<input class="form__select form__input-birth form__input_type_month" id="birth__input" name="birth"
+										type="text" required>
+									<button class="form__select-button form__select-button_type_month "></button>
+									</input>
+									<input class="form__select form__input-birth form__input_type_year" id="birth__input" name="birth"
+										type="text" required>
+									<button class="form__select-button form__select-button_type_year "></button>
+									</input>
+								</div>
+								<span class="form__error"></span>
+							</label>
+							<div class="form__gender form__label">
+								<p class="form__input-title">Gender</p>
+								<div class="form__gender-choice">
+									<label>
+										<input class="form__gender-input invisible-checkbox" id="gender__input" name="gender"
+											type="radio"></input>
+										<span class="visible-checkbox"></span>
+										<span for="male" class="form__gender-label" name="gender">Male</span>
+									</label>
+									<label>
+										<input class="form__gender-input invisible-checkbox" id="gender__input" name="gender"
+											type="radio"></input>
+										<span class="visible-checkbox"></span>
+										<span for="female" class="form__gender-label " name="gender">Female</span>
+									</label>
+								</div>
+							</div>
+							<label class="form__label" name="password">
+								<p class="form__input-title">Password</p>
+								<input class="form__input" id="password__input" name="password" type="password" required></input>
+								<span class="form__error"></span>
+							</label>
+							<label class="form__label" name="confirm-password">
+								<p class="form__input-title">Confirm Password</p>
+								<input class="form__input" id="confirm-password__input" name="password" type="password"
+									required></input>
+								<span class="form__error"></span>
+							</label>
+						</section>
+					</div>
 					<div class="form__sumbit">
 						<p class="form__text">Have an account? <a href="#" target="_blank" class="form__link">Login</a></p>
 						<button class="form__button" type="submit">Complete Signup</button>
 					</div>
 				</form>
 			</div>
-
+			<div class="register__image"></div>
 		</div>
 
 	</main>
