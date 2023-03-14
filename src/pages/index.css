@@ -22,9 +22,10 @@
 @import url('../../blocks/form/__link/form__link.css');
 @import url('../../blocks/form/__text/form__text.css');
 @import url('../../blocks/register/__greeting/register__greeting.css');
-@import url('../../blocks/form/__input/_type/form__input_type_email.css');
 @import url('../../blocks/form/__image-ok/form__image-ok.css');
 @import url('../../blocks/register/__image/register__image.css');
 @import url('../../blocks/form/__select/form__select.css');
 @import url('../../blocks/form/__input-birth/form__input-birth.css');
 @import url('../../blocks/form/__select-birth/form__select-birth.css');
+@import url('../../blocks/form/__input-error/form__input-error.css');
+@import url('../../blocks/form/__button/_type/form__button_type_shake.css');

@@ -20,7 +20,7 @@
 				<h1 class="register__title">Sign up</h1>
 			</div>
 			<div class="register__main">
-				<form class="form">
+				<form class="form" novalidate>
 					<div>
 						<div class="register__greeting">
 							<h2 class="register__greeting-title">New user?</h2>
@@ -29,44 +29,44 @@
 						<section class="form__fieldset">
 							<label class="form__label" name="name">
 								<p class="form__input-title">First name</p>
-								<input class="form__input" id="name__input" name="name" type="text" required></input>
-								<span class="form__error"></span>
+								<input class="form__input" id="name-input" name="name" type="text" minlength="4" required></input>
+								<span class="name-input-error form__input-error"></span>
 							</label>
 							<label class="form__label " name="last-name">
 								<p class="form__input-title">Last name</p>
-								<input class="form__input" id="last-name__input" name="last-name" type="text" required></input>
-								<span class="form__error"></span>
+								<input class="form__input" id="lastname-input" name="last-name" type="text" minlength="7" required></input>
+								<span class="lastname-input-error form__input-error"></span>
 							</label>
 							<label class="form__label " name="nationality">
 								<p class="form__input-title ">Nationality</p>
-								<input class="form__input form__select" id="nationality__input" name="nationality" type="text" required>
+								<input class="form__input form__select" id="nationality-input" name="nationality" type="text" required>
 								<button class="form__select-button"></button>
 								</input>
-								<span class="form__error"></span>
+								<span class="nationality-input-error form__input-error"></span>
 							</label>
 							<label class="form__label" name="email">
 								<p class="form__input-title">E-mail</p>
-								<input class="form__input form__input_type_email" id="email__input" name="email" type="email" required>
+								<input class="form__input" id="email-input" name="email" type="email" required>
 								</input>
-								<span class="form__error"></span>
+								<span class="email-input-error form__input-error"></span>
 							</label>
 							<label class="form__label" name="birth">
 								<p class="form__input-title">Date of Birth</p>
 								<div class="form__select-birth">
-									<input class="form__select form__input-birth form__input_type_date" id="birth__input" name="birth"
+									<input class="form__select form__input-birth form__input_type_date" id="birth-input" name="birth"
 										type="text" required>
 									<button class="form__select-button form__select-button_type_date"></button>
 									</input>
-									<input class="form__select form__input-birth form__input_type_month" id="birth__input" name="birth"
+									<input class="form__select form__input-birth form__input_type_month" id="birth-input" name="birth"
 										type="text" required>
 									<button class="form__select-button form__select-button_type_month "></button>
 									</input>
-									<input class="form__select form__input-birth form__input_type_year" id="birth__input" name="birth"
+									<input class="form__select form__input-birth form__input_type_year" id="birth-input" name="birth"
 										type="text" required>
 									<button class="form__select-button form__select-button_type_year "></button>
 									</input>
 								</div>
-								<span class="form__error"></span>
+								<span class="birth-input-error form__error"></span>
 							</label>
 							<div class="form__gender form__label">
 								<p class="form__input-title">Gender</p>
@@ -87,20 +87,20 @@
 							</div>
 							<label class="form__label" name="password">
 								<p class="form__input-title">Password</p>
-								<input class="form__input" id="password__input" name="password" type="password" required></input>
-								<span class="form__error"></span>
+								<input class="form__input" id="password-input" name="password" type="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" minlength="8" required></input>
+								<span class="password-input-error form__input-error"></span>
 							</label>
 							<label class="form__label" name="confirm-password">
 								<p class="form__input-title">Confirm Password</p>
-								<input class="form__input" id="confirm-password__input" name="password" type="password"
+								<input class="form__input" id="confirmpassword-input" name="password" type="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" minlength="8"
 									required></input>
-								<span class="form__error"></span>
+								<span class="confirmpassword-input-error form__input-error"></span>
 							</label>
 						</section>
 					</div>
 					<div class="form__sumbit">
 						<p class="form__text">Have an account? <a href="#" target="_blank" class="form__link">Login</a></p>
-						<button class="form__button" type="submit">Complete Signup</button>
+						<button class="form__button form__button_type_shake" type="submit">Complete Signup</button>
 					</div>
 				</form>
 			</div>

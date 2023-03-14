@@ -1,6 +1,7 @@
 .register {
 	max-width: 665px;
 	min-height: 480px;
+	min-width: 320px;
 	margin: 0 auto;
 	padding: 0;
 	background-color: #fff;

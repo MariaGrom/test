@@ -4,7 +4,6 @@
 	max-width: 527.8px;
 	display: flex;
 	justify-content: center;
-	border: 1px solid red;
 	align-items: center;
 }
 
@@ -12,6 +11,6 @@
 адаптирования формы под небольшие экраны */
 @media screen and (max-width: 459px) {
 	.register__main {
-		padding: 0;
+		padding: 0 5px;
 	}
 }

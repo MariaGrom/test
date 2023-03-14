@@ -1,7 +1,15 @@
 .form__select {
 position: relative;
+height: 28px;
+font-size: 14px;
+line-height: 16.41px;
+color: #111;
+font-weight: 500;
 }
 
+.form__select:focus{
+	outline: 1px solid #5a61ed;
+}
 
 .form__select-button {
 	background-image: url("../../../src/image/select.svg");
