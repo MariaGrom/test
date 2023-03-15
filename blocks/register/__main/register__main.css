@@ -1,10 +1,10 @@
 .register__main {
 	margin: 0;
 	padding: 0 21px;
-	max-width: 527.8px;
+	width: 527.8px;
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	flex-direction: column;
 }
 
 /* Введены изменения в значения внутренних отступов для 

@@ -1,0 +1,36 @@
+.form__label_type_show-one{
+	animation: 1s show ease;
+}
+
+.form__label_type_show-two{
+	animation: 2s show ease;
+}
+
+.form__label_type_show-three{
+	animation: 3s show ease;
+}
+
+.form__label_type_show-four{
+	animation: 4s show ease;
+}
+
+.form__label_type_show-five{
+	animation: 5s show ease;
+}
+
+.form__label_type_show-six{
+	animation: 6s show ease;
+}
+
+.form__label_type_show-seven{
+	animation: 7s show ease;
+}
+
+.form__label_type_show-eight{
+	animation: 8s show ease;
+}
+
+@keyframes show {
+	from { opacity: 0;}
+	to {opacity: 1;}
+}

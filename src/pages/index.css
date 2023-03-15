@@ -5,10 +5,11 @@
 @import url('../../blocks/register/register.css');
 @import url('../../blocks/form/form.css');
 @import url('../../blocks/register/__sidebar/register__sidebar.css');
-@import url('../../blocks/register/__title/register__title.css');
+@import url('../../blocks/register/__sidebar-title/register__title.css');
 @import url('../../blocks/register/__main/register__main.css');
-@import url('../../blocks/register/__greeting-title/register__greeting-title.css');
+@import url('../../blocks/register/__title/_type/register__title_type_greeting.css');
 @import url('../../blocks/register/__greeting-text/register__greeting-text.css');
+@import url('../../blocks/register/__gratitude/register__gratitude.css');
 @import url('../../blocks/form/__fieldset/form__fieldset.css');
 @import url('../../blocks/form/__input-title/form__input-title.css');
 @import url('../../blocks/form/__input/form__input.css');
@@ -29,3 +30,6 @@
 @import url('../../blocks/form/__select-birth/form__select-birth.css');
 @import url('../../blocks/form/__input-error/form__input-error.css');
 @import url('../../blocks/form/__button/_type/form__button_type_shake.css');
+@import url('../../blocks/register/__main/_type/register__main_type_registered.css');
+@import url('../../blocks/form/__label/_type/form__label_type_show.css');
+@import url('../../blocks/form/__button/_type/form__button_type_inactive.css');
