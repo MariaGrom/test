@@ -7,7 +7,7 @@
 	<meta name="description" content="Тестовое задание для ВТОП3">
 	<meta name="keywords" content="html, css, javascript">
 	<meta name="author" content="Мария Громыко">
-	<link rel="stylesheet" href="./pages/index.css">
+	<link rel="stylesheet" href="./src/pages/index.css">
 
 	<title>ВТОП3</title>
 </head>
@@ -27,80 +27,100 @@
 							<p class="register__greeting-text">Use the form below to create your account.</p>
 						</div>
 						<section class="form__fieldset">
-							<label class="form__label form__label_type_show-one" name="name">
-								<p class="form__input-title">First name</p>
-								<input class="form__input" id="name-input" name="name" type="text" minlength="4" required></input>
+							<label class="form__label form__label_type_show-one" >
+								<span class="form__input-title">First name</span>
+								<input class="form__input" id="name-input" name="name" type="text" minlength="4" required>
 								<span class="name-input-error form__input-error"></span>
 							</label>
-							<label class="form__label form__label_type_show-two" name="last-name">
-								<p class="form__input-title">Last name</p>
-								<input class="form__input" id="lastname-input" name="last-name" type="text" minlength="7" required></input>
+							<label class="form__label form__label_type_show-two">
+								<span class="form__input-title">Last name</span>
+								<input class="form__input" id="lastname-input" name="last-name" type="text" minlength="7" required>
 								<span class="lastname-input-error form__input-error"></span>
 							</label>
-							<label class="form__label form__label_type_show-three" name="nationality">
-								<p class="form__input-title ">Nationality</p>
+							<!-- <div class="form__label form__label_type_show-three">
+								<span class="form__input-title ">Nationality</span>
 								<input class="form__input form__select" id="nationality-input" name="nationality" type="text" required>
 								<button class="form__select-button"></button>
-								</input>
 								<span class="nationality-input-error form__input-error"></span>
-							</label>
-							<label class="form__label form__label_type_show-four" name="email">
-								<p class="form__input-title">E-mail</p>
+							</div> -->
+
+<!--   !!!!    -->
+
+<div class="select ">
+	<span class="form__input-title ">Nationality</span>
+	<div class="select__header">
+		<span class="select__current">American</span> 
+		<div class="select__icon form__select-button"></div>
+	</div>
+	
+	<div class="select__body">
+		<div class="select__item">Russian</div>
+		<div class="select__item">Belgian</div>
+		<div class="select__item">Portuguese</div>
+	</div>
+</div>
+
+
+<!-- !!!!!! -->
+
+
+
+							<label class="form__label form__label_type_show-four">
+								<span class="form__input-title">E-mail</span>
 								<input class="form__input" id="email-input" name="email" type="email" required>
-								</input>
 								<span class="email-input-error form__input-error"></span>
 							</label>
-							<label class="form__label form__label_type_show-five" name="birth">
-								<p class="form__input-title">Date of Birth</p>
+							<div class="form__label form__label_type_show-five">
+								<span class="form__input-title">Date of Birth</span>
 								<div class="form__select-birth">
-									<input class="form__select form__input-birth form__input_type_date" id="birth-input" name="birth"
+									<input class="form__select form__input-birth form__input_type_date" id="birth-day" name="birth"
 										type="number" required>
 									<button class="form__select-button form__select-button_type_date"></button>
-									</input>
-									<input class="form__select form__input-birth form__input_type_month" id="birth-input" name="birth"
+									
+									<input class="form__select form__input-birth form__input_type_month" id="birth-month" name="birth"
 										type="text" required>
 									<button class="form__select-button form__select-button_type_month "></button>
-									</input>
-									<input class="form__select form__input-birth form__input_type_year" id="birth-input" name="birth"
+									
+									<input class="form__select form__input-birth form__input_type_year" id="birth-year" name="birth"
 										type="number" required>
 									<button class="form__select-button form__select-button_type_year "></button>
-									</input>
+									
 								</div>
 								<span class="birth-input-error form__error"></span>
-							</label>
+							</div>
 							<div class="form__gender form__label form__label_type_show-six">
 								<p class="form__input-title">Gender</p>
 								<div class="form__gender-choice">
 									<label>
 										<input class="form__gender-input invisible-checkbox" id="gender__input" name="gender"
-											type="radio"></input>
+											type="radio">
 										<span class="visible-checkbox"></span>
-										<span for="male" class="form__gender-label" name="gender">Male</span>
+										<span  class="form__gender-label" >Male</span>
 									</label>
-									<label>
+									<label >
 										<input class="form__gender-input invisible-checkbox" id="gender__input" name="gender"
-											type="radio"></input>
+											type="radio">
 										<span class="visible-checkbox"></span>
-										<span for="female" class="form__gender-label " name="gender">Female</span>
+										<span  class="form__gender-label" >Female</span>
 									</label>
 								</div>
 							</div>
-							<label class="form__label form__label_type_show-seven" name="password">
-								<p class="form__input-title">Password</p>
-								<input class="form__input" id="password-input" name="password" type="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" minlength="8" required></input>
+							<label class="form__label form__label_type_show-seven" >
+								<span class="form__input-title">Password</span>
+								<input class="form__input" id="password-input" name="password" type="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" minlength="8" required>
 								<span class="password-input-error form__input-error"></span>
 							</label>
-							<label class="form__label form__label_type_show-eight" name="confirm-password">
-								<p class="form__input-title">Confirm Password</p>
+							<label class="form__label form__label_type_show-eight">
+								<span class="form__input-title">Confirm Password</span>
 								<input class="form__input" id="confirmpassword-input" name="password" type="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" minlength="8"
-									required></input>
+									required>
 								<span class="confirmpassword-input-error form__input-error"></span>
 							</label>
 						</section>
 					</div>
 					<div class="form__sumbit">
 						<p class="form__text">Have an account? <a href="#" target="_blank" class="form__link">Login</a></p>
-						<button class="form__button" onclick="window.location.href = './registered.html'" type="submit" id="submit">Complete Signup</button>
+						<button class="form__button" onclick="window.location.href = './src/pages/registered.html'" type="submit" id="submit">Complete Signup</button>
 					</div>
 				</form>
 			</div>
@@ -109,7 +129,7 @@
 
 	</main>
 	<footer></footer>
-	<script src="./pages/index.js"></script>
+	<script src="./src/pages/index.js"></script>
 </body>
 
 </html>
