@@ -27,7 +27,7 @@
 							<p class="register__greeting-text">Use the form below to create your account.</p>
 						</div>
 						<section class="form__fieldset">
-							<label class="form__label form__label_type_show-one" >
+							<label class="form__label form__label_type_show-one">
 								<span class="form__input-title">First name</span>
 								<input class="form__input" id="name-input" name="name" type="text" minlength="4" required>
 								<span class="name-input-error form__input-error"></span>
@@ -37,34 +37,19 @@
 								<input class="form__input" id="lastname-input" name="last-name" type="text" minlength="7" required>
 								<span class="lastname-input-error form__input-error"></span>
 							</label>
-							<!-- <div class="form__label form__label_type_show-three">
+							<div class="select form__label_type_show-three">
 								<span class="form__input-title ">Nationality</span>
-								<input class="form__input form__select" id="nationality-input" name="nationality" type="text" required>
-								<button class="form__select-button"></button>
-								<span class="nationality-input-error form__input-error"></span>
-							</div> -->
-
-<!--   !!!!    -->
-
-<div class="select ">
-	<span class="form__input-title ">Nationality</span>
-	<div class="select__header">
-		<span class="select__current">American</span> 
-		<div class="select__icon form__select-button"></div>
-	</div>
-	
-	<div class="select__body">
-		<div class="select__item">Russian</div>
-		<div class="select__item">Belgian</div>
-		<div class="select__item">Portuguese</div>
-	</div>
-</div>
-
-
-<!-- !!!!!! -->
-
-
-
+								<div class="select__header">
+									<span class="select__current"></span>
+									<div class="select__icon form__select-button"></div>
+								</div>
+								<div class="select__body">
+									<div class="select__item">American</div>
+									<div class="select__item">Russian</div>
+									<div class="select__item">Belgian</div>
+									<div class="select__item">Portuguese</div>
+								</div>
+							</div>
 							<label class="form__label form__label_type_show-four">
 								<span class="form__input-title">E-mail</span>
 								<input class="form__input" id="email-input" name="email" type="email" required>
@@ -73,54 +58,55 @@
 							<div class="form__label form__label_type_show-five">
 								<span class="form__input-title">Date of Birth</span>
 								<div class="form__select-birth">
-									<input class="form__select form__input-birth form__input_type_date" id="birth-day" name="birth"
-										type="number" required>
+									<div class="form__select form__input-birth form__input_type_date" id="birth-day" name="birth">
+										<p class="form__input-text">23</p>
+									</div>
 									<button class="form__select-button form__select-button_type_date"></button>
-									
-									<input class="form__select form__input-birth form__input_type_month" id="birth-month" name="birth"
-										type="text" required>
+									<div class="form__select form__input-birth form__input_type_month" id="birth-month" name="birth">
+										<p class="form__input-text">December</p>
+									</div>
 									<button class="form__select-button form__select-button_type_month "></button>
-									
-									<input class="form__select form__input-birth form__input_type_year" id="birth-year" name="birth"
-										type="number" required>
+									<div class="form__select form__input-birth form__input_type_year" id="birth-year" name="birth">
+										<p class="form__input-text">1995</p>
+									</div>
 									<button class="form__select-button form__select-button_type_year "></button>
-									
 								</div>
 								<span class="birth-input-error form__error"></span>
 							</div>
+
 							<div class="form__gender form__label form__label_type_show-six">
 								<p class="form__input-title">Gender</p>
 								<div class="form__gender-choice">
 									<label>
-										<input class="form__gender-input invisible-checkbox" id="gender__input" name="gender"
-											type="radio">
+										<input class="form__gender-input invisible-checkbox" id="gender__input" name="gender" type="radio">
 										<span class="visible-checkbox"></span>
-										<span  class="form__gender-label" >Male</span>
+										<span class="form__gender-label">Male</span>
 									</label>
-									<label >
-										<input class="form__gender-input invisible-checkbox" id="gender__input" name="gender"
-											type="radio">
+									<label>
+										<input class="form__gender-input invisible-checkbox" id="gender__input" name="gender" type="radio">
 										<span class="visible-checkbox"></span>
-										<span  class="form__gender-label" >Female</span>
+										<span class="form__gender-label">Female</span>
 									</label>
 								</div>
 							</div>
-							<label class="form__label form__label_type_show-seven" >
+							<label class="form__label form__label_type_show-seven">
 								<span class="form__input-title">Password</span>
-								<input class="form__input" id="password-input" name="password" type="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" minlength="8" required>
+								<input class="form__input" id="password-input" name="password" type="password"
+									pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" minlength="8" required>
 								<span class="password-input-error form__input-error"></span>
 							</label>
 							<label class="form__label form__label_type_show-eight">
 								<span class="form__input-title">Confirm Password</span>
-								<input class="form__input" id="confirmpassword-input" name="password" type="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" minlength="8"
-									required>
+								<input class="form__input" id="confirmpassword-input" name="password" type="password"
+									pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" minlength="8" required>
 								<span class="confirmpassword-input-error form__input-error"></span>
 							</label>
 						</section>
 					</div>
 					<div class="form__sumbit">
 						<p class="form__text">Have an account? <a href="#" target="_blank" class="form__link">Login</a></p>
-						<button class="form__button" onclick="window.location.href = './src/pages/registered.html'" type="submit" id="submit">Complete Signup</button>
+						<button class="form__button" onclick="window.location.href = './src/pages/registered.html'" type="submit"
+							id="submit">Complete Signup</button>
 					</div>
 				</form>
 			</div>

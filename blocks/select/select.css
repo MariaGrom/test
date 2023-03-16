@@ -5,8 +5,8 @@
 	margin: 0;
 }
 
-.select__active .select__body{
-display: block;
+.select__active .select__body {
+	display: block;
 }
 
 .select__header {
@@ -15,6 +15,7 @@ display: block;
 	margin: 5px 0 0;
 	padding: 0 0 0 0.4px;
 	cursor: pointer;
+	position: relative;
 }
 
 .select__current {
@@ -29,29 +30,25 @@ display: block;
 .select__icon {
 	background-image: url("../../src/image/select.svg");
 	background-repeat: no-repeat;
-	background-position: right;
-	border: none;
+	/* background-position: right; */
+	/* border: none; */
 	width: 8px;
 	height: 4px;
-	position: relative;
-	top: 10px;
-	right: -173px;
-	/* background-color: #fff; */
-	/* cursor: pointer; */
-	padding: 0;
-	margin: 0;
+	position: absolute;
+	top: 11px;
+	right: 0;
 	display: flex;
 	align-items: center;
 	flex-shrink: 0;
 	justify-content: center;
 	text-align: center;
+	margin-left: auto;
 }
-
 
 .select__body {
 	border: 0.7px solid #f2f2f2;
 	border-top: 0;
-	left:0;
+	left: 0;
 	position: absolute;
 	right: 0;
 	width: 100%;
@@ -60,16 +57,16 @@ display: block;
 	display: none;
 }
 
-.select__item{
+.select__item {
 	font-size: 14px;
-line-height: 16.41px;
-color: #111;
-font-weight: 400;
-margin: 0;
-padding: 0;
-cursor: pointer;
+	line-height: 16.41px;
+	color: #111;
+	font-weight: 400;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
 }
 
-.select__item:hover{
+.select__item:hover {
 	font-weight: 500;
 }
