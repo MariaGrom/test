@@ -1,0 +1,13 @@
+.select__body {
+	border: 0.7px solid #f2f2f2;
+	border-top: 0;
+	left: 0;
+	position: absolute;
+	right: 0;
+	width: 100%;
+	background-color: #fff;
+	z-index: 5;
+	display: none;
+	height: 40px;
+	overflow-y:scroll
+}

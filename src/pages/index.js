@@ -78,6 +78,8 @@ const enableValidation = () => {
 	formList.forEach((formElement) => {
 		formElement.addEventListener("submit", (evt) => {
 			evt.preventDefault();
+
+			e.target.reset(); 
 		});
 		setEventListeners(formElement);
 	});
@@ -85,7 +87,7 @@ const enableValidation = () => {
 
 enableValidation();
 
-// СЕЛЕКТ
+// Функция выбора (селект)
 
 let select = function () {
 	let selectHeader = document.querySelectorAll(".select");
@@ -109,7 +111,6 @@ let select = function () {
 		select = this.closest(".select");
 
 		currentText = select.querySelector(".select__current");
-		console.log(currentText);
 		currentText.innerText = text;
 		select.classList.remove("select__active")
 	}

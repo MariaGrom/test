@@ -1,0 +1,13 @@
+.select__item {
+	font-size: 14px;
+	line-height: 16.41px;
+	color: #111;
+	font-weight: 400;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+}
+
+.select__item:hover {
+	font-weight: 500;
+}
